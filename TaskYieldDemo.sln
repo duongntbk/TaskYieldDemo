@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskYieldDemo", "TaskYieldDemo\TaskYieldDemo.csproj", "{CD02CB71-5C5A-4158-A21B-81602306F51F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskYieldDemoTests", "TaskYieldDemoTests\TaskYieldDemoTests.csproj", "{9D527EB3-781C-48CB-8155-0A60E87B5423}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD02CB71-5C5A-4158-A21B-81602306F51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD02CB71-5C5A-4158-A21B-81602306F51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD02CB71-5C5A-4158-A21B-81602306F51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD02CB71-5C5A-4158-A21B-81602306F51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D527EB3-781C-48CB-8155-0A60E87B5423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D527EB3-781C-48CB-8155-0A60E87B5423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D527EB3-781C-48CB-8155-0A60E87B5423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D527EB3-781C-48CB-8155-0A60E87B5423}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0BD0DA3-3AFE-436C-934E-F28E92AF2222}
+	EndGlobalSection
+EndGlobal
