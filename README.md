@@ -1,6 +1,6 @@
 This repository holds the sample code for my blog post about the `Task.Yield` method in .NET.
 
-[https://duongnt.com/tag-helpers](https://duongnt.com/task-yield)
+[https://duongnt.com/task-yield](https://duongnt.com/task-yield)
 
 # Usage
 
