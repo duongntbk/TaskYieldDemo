@@ -9,14 +9,15 @@ namespace TaskYieldDemo.DataRepo
 
         public DummyDataReader() => _random = new Random();
 
-        public Task<WeatherModel> ReadAsync()
+        public async Task<WeatherModel> ReadAsync()
         {
-            return Task.FromResult(new WeatherModel
+            await Task.Delay(500); // Simulate a slow running process
+            return new WeatherModel
             {
                 DegreeInCelcius = _random.NextDouble() * 30,
                 RainProbability = _random.NextDouble() * 100,
                 WindMetrePerHour = _random.NextDouble() * 10
-            });
+            };
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using TaskYieldDemo.DataRepo;
 
@@ -19,8 +20,15 @@ namespace TaskYieldDemo.Service
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var currentWeather = await _reader.ReadAsync();
-                await _writer.WriteAsync(currentWeather);
+                try
+                {
+                    var currentWeather = await _reader.ReadAsync();
+                    await _writer.WriteAsync(currentWeather);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error while retrieving weather: {ex.Message}");
+                }
             }
         }
     }
